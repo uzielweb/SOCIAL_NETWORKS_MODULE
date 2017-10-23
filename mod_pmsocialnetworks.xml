@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * @copyright	Copyright (c) 2017 Ponto Mega (https://www.pontomega.com.br). All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>Social Networks</name>
+    <author>Ponto Mega - Uziel Almeida Oliveira</author>
+    <creationDate>October 2017</creationDate>
+    <copyright>Copyright (c) 2017 SocialNetworks. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contato@pontomega.com.br</authorEmail>
+    <authorUrl>https://www.pontomega.com.br</authorUrl>
+    <version>1.0.0</version>
+    <description>
+        <![CDATA[
+	<p>A simple module to show social networks</p>
+	]]>
+    </description>
+
+    <files>
+        <filename module="mod_pmsocialnetworks">mod_pmsocialnetworks.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+
+    <media folder="media" destination="mod_pmsocialnetworks">
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <filename>index.html</filename>
+    </media>
+
+    <languages>
+        <language tag="en-GB">en-GB.mod_pmsocialnetworks.ini</language>
+        <language tag="en-GB">en-GB.mod_pmsocialnetworks.sys.ini</language>
+         <language tag="pt-BR">en-GB.mod_pmsocialnetworks.ini</language>
+        <language tag="pt-B">pt-B.mod_pmsocialnetworks.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+ <field name="social_links" type="subform" formsource="modules/mod_pmsocialnetworks/links.xml" multiple="true" label="LINKS_LIST" description="LINKS_LIST_DESC" />
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field name="cachemode" type="hidden" default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
