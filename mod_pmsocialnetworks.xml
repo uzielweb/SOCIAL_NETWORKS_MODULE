@@ -32,6 +32,7 @@
         <folder>images</folder>
         <folder>js</folder>
         <filename>index.html</filename>
+	  <filename>links.xml</filename>
     </media>
 
     <languages>
