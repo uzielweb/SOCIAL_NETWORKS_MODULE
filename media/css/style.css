@@ -3,4 +3,8 @@
  * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
-
+.social_link {
+	float: left;
+	display: inline-block;
+	padding: 5px;
+}
