@@ -8,3 +8,8 @@
 	display: inline-block;
 	padding: 5px;
 }
+.social_links {
+	display: inline-block;
+	width: 100%;
+	float: none;
+}
