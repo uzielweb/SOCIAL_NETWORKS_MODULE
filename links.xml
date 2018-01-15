@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
     <field name="social_icon" type="list"  required="true" label="SOCIAL_ICON">
+<option value="envelope">Email</option>
 <option value="500px">500Px</option>
 <option value="adn">Adn</option>
 <option value="amazon">Amazon</option>
